@@ -1,0 +1,34 @@
+.slick-prev, .slick-next {
+    border-radius: 50%;
+    border: 1px solid #076BFF;
+    width: 40px;
+    height: 40px;
+    z-index: 1;
+}
+
+.slick-prev::before,
+.slick-next::before {
+    display: none;
+}
+
+.slick-prev {
+    left: 13px;
+}
+
+.slick-next {
+    right: 13px;
+}
+
+.ui-accordion-header .ui-accordion-header-icon {
+    background: url("../images/down.png");
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: calc(50% - 6px);
+    right: 28px;
+}
+
+.ui-accordion-header-active .ui-accordion-header-icon {
+    background-image: url("../images/up.png");
+    transform: rotate(3deg);
+}
